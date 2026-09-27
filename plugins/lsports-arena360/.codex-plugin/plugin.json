@@ -30,6 +30,8 @@
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://www.lsports.eu/arena360/",
+    "privacyPolicyURL": "https://www.lsports.eu/privacy-policy/",
+    "termsOfServiceURL": "https://www.lsports.eu/terms-conditions/",
     "logo": "./assets/logo.png",
     "composerIcon": "./assets/icon.svg",
     "brandColor": "#E2F22D",

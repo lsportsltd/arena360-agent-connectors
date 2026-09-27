@@ -8,6 +8,10 @@ Marketplace: `.agents/plugins/marketplace.json`
 
 `interface.websiteURL` is https://www.lsports.eu/arena360/
 
+`interface.privacyPolicyURL` is https://www.lsports.eu/privacy-policy/
+
+`interface.termsOfServiceURL` is https://www.lsports.eu/terms-conditions/
+
 `brandColor` is `#E2F22D`.
 
 Capabilities: Read and Write.

@@ -125,3 +125,9 @@ Requires Node 20+.
 Apache-2.0. Copyright LSports Data Ltd. See `LICENSE` and `NOTICE`.
 
 Homepage: https://www.lsports.eu/arena360/
+
+Support: supports@lsports.eu
+
+Terms: https://www.lsports.eu/terms-conditions/
+
+Privacy: https://www.lsports.eu/privacy-policy/

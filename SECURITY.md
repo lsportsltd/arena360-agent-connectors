@@ -1,6 +1,6 @@
 # Security
 
-Report vulnerabilities in this packaging repo through private GitHub vulnerability reporting on `lsportsltd/arena360-agent-connectors`.
+Report vulnerabilities to supports@lsports.eu.
 
 Do not file public GitHub issues for security findings.
 

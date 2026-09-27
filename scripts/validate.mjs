@@ -71,7 +71,6 @@ const REQUIRED = [
   "submissions/cursor-marketplace.md",
   "submissions/openai-plugins.md",
   "submissions/mcp-registry.md",
-  "submissions/meta-muse.md",
 ];
 
 for (const path of REQUIRED) {
@@ -154,6 +153,12 @@ for (const [label, json] of [
   if (json && json.license && json.license !== "Apache-2.0") fail(`${label} license is ${json.license}`);
 }
 
+for (const path of ["SECURITY.md", "docs/listing-copy.md", "README.md"]) {
+  if (existsSync(join(root, path)) && !read(path).includes("supports@lsports.eu")) {
+    fail(`${path} must name supports@lsports.eu`);
+  }
+}
+
 if (cursorPlugin) {
   if (cursorPlugin.name !== "lsports-arena360") fail("cursor plugin name");
   if (cursorPlugin.category !== "productivity") fail("cursor plugin category must be productivity");
@@ -168,10 +173,11 @@ if (codexPlugin?.interface) {
   const iface = codexPlugin.interface;
   if (!("websiteURL" in iface)) fail("codex interface must use websiteURL (current OpenAI docs)");
   if ("websiteUrl" in iface) fail("codex interface still uses Airtable websiteUrl casing");
-  for (const key of ["privacyPolicyURL", "termsOfServiceURL"]) {
-    if (key in iface && !String(iface[key]).startsWith("https://")) {
-      fail(`codex ${key} must be an https URL`);
-    }
+  if (iface.privacyPolicyURL !== "https://www.lsports.eu/privacy-policy/") {
+    fail("codex privacyPolicyURL");
+  }
+  if (iface.termsOfServiceURL !== "https://www.lsports.eu/terms-conditions/") {
+    fail("codex termsOfServiceURL");
   }
   if (iface.brandColor !== "#E2F22D") fail("codex brandColor must be #E2F22D");
 }

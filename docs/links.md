@@ -7,6 +7,8 @@ Only these URLs belong in this repo. Do not add staging hosts, internal UI paths
 | MCP (only) | https://arena-mcp.lsports.eu/arena/mcp |
 | Product | https://www.lsports.eu/arena360/ |
 | Company | https://www.lsports.eu |
+| Terms | https://www.lsports.eu/terms-conditions/ |
+| Privacy | https://www.lsports.eu/privacy-policy/ |
 | AI access docs | https://docs.lsports.eu/u/getting-started/arena360-ai-access |
 | Cursor plugins | https://cursor.com/docs/reference/plugins |
 | Claude plugins | https://code.claude.com/docs/en/plugins |
@@ -17,6 +19,8 @@ Only these URLs belong in this repo. Do not add staging hosts, internal UI paths
 | Intended GitHub repo | https://github.com/lsportsltd/arena360-agent-connectors |
 
 The GitHub URL is the repo Daniel will create. It does not exist yet.
+
+Support and security: supports@lsports.eu
 
 CSM mail for package and premium questions: csm@lsports.eu
 
