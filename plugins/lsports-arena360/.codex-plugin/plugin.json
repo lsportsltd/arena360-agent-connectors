@@ -1,0 +1,45 @@
+{
+  "name": "lsports-arena360",
+  "version": "0.1.0",
+  "description": "Run your whole ARENA360 account in plain language. Manage TRADE ordering and configuration, DEFEND risk controls, ENGAGE content and Coverage Hub, and benchmark coverage, uptime and margin with BOOST. Every change is shown and approved before it is applied. Bundles the hosted LSports ARENA360 MCP server and skills for operator workflows.",
+  "author": {
+    "name": "LSports Data Ltd.",
+    "url": "https://www.lsports.eu"
+  },
+  "homepage": "https://www.lsports.eu/arena360/",
+  "repository": "https://github.com/lsportsltd/arena360-agent-connectors",
+  "license": "Apache-2.0",
+  "keywords": [
+    "arena360",
+    "lsports",
+    "sportsbook",
+    "trading",
+    "ordering",
+    "boost",
+    "coverage-hub",
+    "mcp",
+    "operators"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "LSports ARENA360",
+    "shortDescription": "Run your whole ARENA360 account in plain language.",
+    "longDescription": "Run your whole ARENA360 account in plain language. Manage TRADE ordering and configuration, DEFEND risk controls, ENGAGE content and Coverage Hub, and benchmark coverage, uptime and margin with BOOST. Every change is shown and approved before it is applied. Bundles the hosted LSports ARENA360 MCP server and skills for operator workflows.",
+    "developerName": "LSports Data Ltd.",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://www.lsports.eu/arena360/",
+    "privacyPolicyURL": "<TERMS_URL>",
+    "termsOfServiceURL": "<TERMS_URL>",
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/icon.svg",
+    "brandColor": "#E2F22D",
+    "defaultPrompt": [
+      "Show which sports I am ordering InPlay and how many fixtures sit under each.",
+      "Compare BOOST fixture coverage for my named providers last 7 days.",
+      "Who am I signed in as on this ARENA360 account?"
+    ],
+    "screenshots": []
+  }
+}

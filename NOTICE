@@ -1,0 +1,9 @@
+LSports ARENA360 Agent Connectors
+Copyright 2026 LSports Data Ltd.
+
+This product includes software developed by LSports Data Ltd.
+Licensed under the Apache License, Version 2.0.
+
+Vendored Cursor plugin schemas in scripts/schemas/ are copied from
+https://github.com/cursor/plugins and remain under that project's MIT license.
+See scripts/schemas/README.md.

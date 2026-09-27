@@ -1,0 +1,8 @@
+# Replace handle placeholders before the public GitHub repo is announced.
+# Owners: Product = <PRODUCT_OWNER_HANDLE>, Engineering = <ENG_OWNER_HANDLE>
+* @<PRODUCT_OWNER_HANDLE> @<ENG_OWNER_HANDLE>
+/plugins/ @<ENG_OWNER_HANDLE>
+/docs/listing-copy.md @<PRODUCT_OWNER_HANDLE>
+/docs/repo-settings.md @<PRODUCT_OWNER_HANDLE>
+/assets/ @<PRODUCT_OWNER_HANDLE>
+/submissions/ @<PRODUCT_OWNER_HANDLE> @<ENG_OWNER_HANDLE>

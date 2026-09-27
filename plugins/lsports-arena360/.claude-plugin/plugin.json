@@ -1,0 +1,24 @@
+{
+  "name": "lsports-arena360",
+  "displayName": "LSports ARENA360",
+  "version": "0.1.0",
+  "description": "Run your whole ARENA360 account in plain language. Manage TRADE ordering and configuration, DEFEND risk controls, ENGAGE content and Coverage Hub, and benchmark coverage, uptime and margin with BOOST. Every change is shown and approved before it is applied. Bundles the hosted LSports ARENA360 MCP server and skills for operator workflows.",
+  "author": {
+    "name": "LSports Data Ltd.",
+    "url": "https://www.lsports.eu"
+  },
+  "homepage": "https://www.lsports.eu/arena360/",
+  "repository": "https://github.com/lsportsltd/arena360-agent-connectors",
+  "license": "Apache-2.0",
+  "keywords": [
+    "arena360",
+    "lsports",
+    "sportsbook",
+    "trading",
+    "ordering",
+    "boost",
+    "coverage-hub",
+    "mcp",
+    "operators"
+  ]
+}

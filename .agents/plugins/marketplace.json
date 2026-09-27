@@ -1,0 +1,26 @@
+{
+  "name": "arena360-agent-connectors",
+  "description": "Official LSports ARENA360 plugins for AI agents.",
+  "owner": {
+    "name": "LSports Data Ltd.",
+    "url": "https://www.lsports.eu"
+  },
+  "plugins": [
+    {
+      "name": "lsports-arena360",
+      "description": "Run your whole ARENA360 account in plain language. Manage TRADE ordering and configuration, DEFEND risk controls, ENGAGE content and Coverage Hub, and benchmark coverage, uptime and margin with BOOST. Every change is shown and approved before it is applied. Bundles the hosted LSports ARENA360 MCP server and skills for operator workflows.",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lsports-arena360"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ],
+  "interface": {
+    "displayName": "LSports ARENA360"
+  }
+}
