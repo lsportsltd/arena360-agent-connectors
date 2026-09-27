@@ -3,7 +3,7 @@
   "name": "eu.lsports/arena360",
   "title": "LSports ARENA360",
   "description": "Run your ARENA360 account in plain language. Writes are shown and approved first.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "websiteUrl": "https://www.lsports.eu/arena360/",
   "repository": {
     "url": "https://github.com/lsportsltd/arena360-agent-connectors",

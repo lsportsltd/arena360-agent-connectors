@@ -3,7 +3,7 @@ name: arena360-boost
 description: "Use for BOOST fixture coverage, market coverage, market uptime, or margin, including where margin trails. If books, sport, league, or time frame are missing, ask inside this skill. All-provider rankings belong to Coverage Hub."
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 

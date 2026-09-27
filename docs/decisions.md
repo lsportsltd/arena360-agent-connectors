@@ -44,6 +44,10 @@ https://docs.lsports.eu/u/getting-started/arena360-ai-access describes write acc
 
 This plugin follows the hosted server. Configuration, Ordering, and Trading floor include writes. Coverage Hub and BOOST are reads. Every write goes through `arena360-changes-apply`.
 
+## Workflow prompt runs
+
+`arena360-readiness-brief` and `arena360-incident-investigate` were not run against a signed-in account from this packaging session. The hosted MCP rejected an anonymous initialize. No transcript is stored here.
+
 ## Operator contact
 
 Public docs publish support@lsports.eu for technical support. Skills use that address when an operator needs a person.

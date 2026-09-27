@@ -3,7 +3,7 @@ name: arena360-markets
 description: Use when the operator wants to see or change which markets are offered on a sport, country, league, or fixture, or to assign a provider list on those markets.
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 

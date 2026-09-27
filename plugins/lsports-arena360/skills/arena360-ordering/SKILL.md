@@ -3,7 +3,7 @@ name: arena360-ordering
 description: Use when the operator asks what they ordered, wants to add or remove orders, or needs a per-sport, per-country, or per-league subscription breakdown.
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 

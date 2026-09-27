@@ -3,7 +3,7 @@ name: arena360-configuration
 description: Use when the operator asks about packages, templates, provider lists, odds ladders, alerts, distribution, or market display settings.
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 

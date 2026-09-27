@@ -18,7 +18,7 @@ Run your whole ARENA360 account in plain language. Manage TRADE ordering and con
 | Developer | LSports Data Ltd. |
 | MCP key | `arena360` |
 | MCP URL | `https://arena-mcp.lsports.eu/arena/mcp` |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | License | Apache-2.0 |
 | Category | Productivity |
 | Homepage | https://www.lsports.eu/arena360/ |

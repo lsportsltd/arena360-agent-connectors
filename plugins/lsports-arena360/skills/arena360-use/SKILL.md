@@ -1,9 +1,9 @@
 ---
 name: arena360-use
-description: "MANDATORY prerequisite. You MUST load this skill before any ARENA360 MCP tool call, including TRADE orders, configuration, trading floor, BOOST, Coverage Hub, session identity, writes, DEFEND, and ENGAGE."
+description: "MANDATORY prerequisite. You MUST load this skill before any ARENA360 MCP tool call, including TRADE orders, configuration, trading floor, BOOST, Coverage Hub, session identity, writes, readiness briefs, match incidents, DEFEND, and ENGAGE."
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 
@@ -17,7 +17,7 @@ You operate the operator's ARENA360 account. You do not place bets. You do not s
 
 1. If session identity is unknown, call `get_session_identity`.
 2. Report customer account and signed-in user when asked who is signed in.
-3. Route the request to one domain. Do not sweep domains.
+3. Route the request to one domain. Do not sweep domains. A readiness brief or an incident investigation is one route. Those skills call the other domain skills. That is not a sweep.
 
 ## Domain routing
 
@@ -33,6 +33,8 @@ You operate the operator's ARENA360 account. You do not place bets. You do not s
 | Risk, liability, bettor limits | DEFEND | `arena360-defend` (stub) |
 | Tips, widgets, engagement content | ENGAGE | `arena360-engage` (stub) |
 | Integrity, match fixing, fraud rings | Integrity | `arena360-integrity` |
+| Readiness, pre-match check, am I ready to trade | Readiness | `arena360-readiness-brief` |
+| Incident, what happened on this match, unexpected suspension | Incident | `arena360-incident-investigate` |
 
 Ordering answers come from `ordering_*` only. Trading floor answers come from `tradingfloor_*` only. BOOST comparison tools are not the operator's order book.
 

@@ -6,7 +6,7 @@ Marketplace: `.cursor-plugin/marketplace.json`
 
 Manifest: `plugins/lsports-arena360/.cursor-plugin/plugin.json`
 
-Version: 0.1.0
+Version: 0.2.0
 
 License: Apache-2.0
 

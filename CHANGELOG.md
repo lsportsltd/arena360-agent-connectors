@@ -1,7 +1,13 @@
 # Changelog
 
 All notable changes to this packaging repo are documented here.
-Version `0.1.0` is used in every plugin manifest and in `server.json`.
+Version `0.2.0` is used in every plugin manifest and in `server.json`.
+
+## 0.2.0 - 2026-09-27
+
+- Adds `arena360-readiness-brief` for a pre-trade check across ordering, package, configuration, the trading floor, alerts, and BOOST when books are named.
+- Adds `arena360-incident-investigate` for a read-only match problem review. Fixes still go through approval, one change at a time.
+- `arena360-use` routes readiness and incident questions to those skills.
 
 ## 0.1.0 - 2026-09-27
 

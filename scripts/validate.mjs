@@ -90,6 +90,8 @@ const SKILLS = [
   "arena360-defend",
   "arena360-engage",
   "arena360-integrity",
+  "arena360-readiness-brief",
+  "arena360-incident-investigate",
 ];
 
 const skillsDir = join(root, "plugins/lsports-arena360/skills");
@@ -111,7 +113,7 @@ if (!SHARED.startsWith("Run your whole ARENA360 account in plain language.")) {
 }
 
 const MCP_URL = "https://arena-mcp.lsports.eu/arena/mcp";
-const VERSION = "0.1.0";
+const VERSION = "0.2.0";
 
 function expectShared(label, value) {
   if (value !== SHARED) fail(`${label} description does not match the shared string`);

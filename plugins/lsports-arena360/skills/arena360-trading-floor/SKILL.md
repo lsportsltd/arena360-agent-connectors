@@ -3,7 +3,7 @@ name: arena360-trading-floor
 description: Use when the operator asks what is on the trading floor now, wants fixture markets and lines, or wants to suspend or unsuspend a fixture or market.
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 

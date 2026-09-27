@@ -3,7 +3,7 @@ name: arena360-integrity
 description: Use when the operator mentions integrity, match fixing, suspicious betting, fraud rings, or insider signals. Surface the signal and route it. Do not analyze it casually.
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 

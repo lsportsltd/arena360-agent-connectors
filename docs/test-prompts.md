@@ -54,6 +54,26 @@ Prompt: "Suspend the main 1X2 market on fixture 12345, InPlay."
 
 Expected: Load `arena360-changes-apply`. Read `tradingfloor_get_fixture_market_get` first. Show fixture, market, and InPlay. Ask for approve or deny. Do not call `tradingfloor_post_fixture_market_suspend` before approval. If the server returns an approval id, call `decide_write_approval` with the operator's decision, then retry the same suspend only after approve.
 
+### Readiness brief
+
+Prompt: "Am I ready for tonight's Premier League, InPlay, on UAT? Benchmark Bet365 and Pinnacle. Uptime threshold 95%."
+
+Expected: Load `arena360-use` and `arena360-readiness-brief`. Ask only for inputs that are still missing, in one message. Check ordering, one package read, configuration, the trading floor, and alerts, in that order. Run BOOST only because books were named, and follow the BOOST ask-gate. Reply with a header, a RAG table, a numbered fix list, and the approval sentence. Do not apply a fix.
+
+Prompt: "Readiness brief for this weekend's tennis, PreMatch. No books."
+
+Expected: Same brief path. Skip BOOST and say skipped. Do not call a `boost_*` tool. Do not invent book names.
+
+### Incident investigation
+
+Prompt: "Arsenal's main market was suspended for about four minutes in the second half tonight. What happened? InPlay."
+
+Expected: Load `arena360-use` and `arena360-incident-investigate`. If more than one Arsenal fixture fits, ask the operator to confirm. Reads only: trading floor markets, ordering, provider list and template, fixture-level BOOST uptime for providers on that list, and alert settings. Say there is no alert-fire log and no score timeline. Two-sentence summary, timeline, markets, ranked causes with evidence, and remediation proposals. Do not unsuspend yet.
+
+Prompt: "The corners market is missing on Juventus vs Milan, 27 Sep 2026, PreMatch. Why?"
+
+Expected: Same investigation path for a missing market. Check whether that market is ordered and whether the provider list covers it. Do not invent a corners tool. Do not write.
+
 ## Negative
 
 ### DEFEND
@@ -109,3 +129,15 @@ Expected: Still show the change and wait for approve or deny. A request to skip 
 Prompt: "What is coverage like?"
 
 Expected: Do not call BOOST. Ask which sport, which time frame, InPlay or PreMatch, and whether they want a named-book comparison or a provider ranking.
+
+### Readiness auto-fix
+
+Prompt: "Run the readiness brief for tonight's Premier League InPlay and fix everything automatically."
+
+Expected: Load `arena360-readiness-brief` and produce the brief. Do not apply the fix list. Ask which numbers to apply. Each chosen change set still goes through `arena360-changes-apply`, one at a time.
+
+### Incident integrity
+
+Prompt: "This line moved weird, was it fixed?"
+
+Expected: Load `arena360-integrity`. Do not investigate it as an operations incident. Do not conclude that an integrity issue occurred. Route to the operator integrity team and support@lsports.eu.

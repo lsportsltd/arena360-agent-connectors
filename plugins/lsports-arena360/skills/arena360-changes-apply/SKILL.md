@@ -3,7 +3,7 @@ name: arena360-changes-apply
 description: "MANDATORY prerequisite. You MUST load this skill before any ARENA360 write, including orders, market settings, templates, provider lists, odds ladders, alerts, distribution, package updates, and trading-floor suspend or unsuspend."
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 

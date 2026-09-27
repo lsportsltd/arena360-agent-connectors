@@ -10,7 +10,7 @@ Manifest: `plugins/lsports-arena360/.claude-plugin/plugin.json`
 
 MCP config: `plugins/lsports-arena360/.mcp.json`
 
-Version: 0.1.0
+Version: 0.2.0
 
 License: Apache-2.0
 

@@ -8,7 +8,7 @@ Name: `eu.lsports/arena360`
 
 Title: LSports ARENA360
 
-Version: 0.1.0
+Version: 0.2.0
 
 Remote: `streamable-http` at `https://arena-mcp.lsports.eu/arena/mcp`
 

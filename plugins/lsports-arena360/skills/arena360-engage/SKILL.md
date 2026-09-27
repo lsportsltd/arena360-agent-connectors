@@ -3,7 +3,7 @@ name: arena360-engage
 description: Use when the operator asks about ENGAGE, tips, livescore widgets, campaigns, or bettor-facing content. Tools for this module are not on the hosted MCP.
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 

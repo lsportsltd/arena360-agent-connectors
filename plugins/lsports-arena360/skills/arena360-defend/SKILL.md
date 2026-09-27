@@ -3,7 +3,7 @@ name: arena360-defend
 description: Use when the operator asks about DEFEND, risk controls, liability, betting limits, or bettor risk. Tools for this module are not on the hosted MCP.
 license: Apache-2.0
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   author: lsports
 ---
 

@@ -13,7 +13,7 @@ Audience: B2B sportsbook operators. This is the control layer for a whole ARENA3
 | Hosted MCP | `https://arena-mcp.lsports.eu/arena/mcp` |
 | Plugin id | `lsports-arena360` |
 | MCP key | `arena360` |
-| Skills | 12 operator workflows, including write approval |
+| Skills | 14 operator workflows, including write approval, readiness briefs, and incident investigation |
 | Access | Read and write for modules that expose tools |
 
 DEFEND and ENGAGE appear in product positioning. The hosted MCP currently exposes **zero** tools for those modules. Their skills are stubs. The tool list ships with the plugin at `plugins/lsports-arena360/skills/arena360-use/references/tool-inventory.md`.
