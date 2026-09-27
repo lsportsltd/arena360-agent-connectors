@@ -18,7 +18,7 @@ Only these URLs belong in this repo. Do not add staging hosts, internal UI paths
 | MCP Registry schema | https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json |
 | GitHub | https://github.com/lsportsltd/arena360-agent-connectors |
 
-Support and security: supports@lsports.eu
+Support and security: support@lsports.eu
 
 CSM mail for package and premium questions: csm@lsports.eu
 

@@ -20,7 +20,7 @@ There is no package entry. This repository does not ship a server binary. Icons 
 
 ## Codex listing fields
 
-OpenAI plugin docs name `websiteURL`, `privacyPolicyURL`, and `termsOfServiceURL`. This repo sets all three. Terms are https://www.lsports.eu/terms-conditions/. Privacy is https://www.lsports.eu/privacy-policy/. Support and security contact is supports@lsports.eu.
+OpenAI plugin docs name `websiteURL`, `privacyPolicyURL`, and `termsOfServiceURL`. This repo sets all three. Terms are https://www.lsports.eu/terms-conditions/. Privacy is https://www.lsports.eu/privacy-policy/. Support and security contact is support@lsports.eu.
 
 The Codex marketplace entry includes `policy.installation`, `policy.authentication`, and `category`, and a local `source` path of `./plugins/lsports-arena360`.
 

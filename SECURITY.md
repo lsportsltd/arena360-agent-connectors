@@ -1,6 +1,6 @@
 # Security
 
-Report vulnerabilities to supports@lsports.eu.
+Report vulnerabilities to support@lsports.eu.
 
 Do not file public GitHub issues for security findings.
 

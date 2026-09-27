@@ -154,8 +154,8 @@ for (const [label, json] of [
 }
 
 for (const path of ["SECURITY.md", "docs/listing-copy.md", "README.md"]) {
-  if (existsSync(join(root, path)) && !read(path).includes("supports@lsports.eu")) {
-    fail(`${path} must name supports@lsports.eu`);
+  if (existsSync(join(root, path)) && !read(path).includes("support@lsports.eu")) {
+    fail(`${path} must name support@lsports.eu`);
   }
 }
 

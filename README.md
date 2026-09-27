@@ -125,7 +125,7 @@ Apache-2.0. Copyright LSports Data Ltd. See `LICENSE` and `NOTICE`.
 
 Homepage: https://www.lsports.eu/arena360/
 
-Support: supports@lsports.eu
+Support: support@lsports.eu
 
 Terms: https://www.lsports.eu/terms-conditions/
 

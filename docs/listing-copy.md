@@ -22,8 +22,8 @@ Run your whole ARENA360 account in plain language. Manage TRADE ordering and con
 | License | Apache-2.0 |
 | Category | Productivity |
 | Homepage | https://www.lsports.eu/arena360/ |
-| Support | supports@lsports.eu |
-| Security | supports@lsports.eu |
+| Support | support@lsports.eu |
+| Security | support@lsports.eu |
 | Terms | https://www.lsports.eu/terms-conditions/ |
 | Privacy | https://www.lsports.eu/privacy-policy/ |
 | Brand color | `#E2F22D` |
