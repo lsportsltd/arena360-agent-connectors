@@ -17,7 +17,7 @@ Coverage Hub livescore and spotlight reads are catalog and scout coverage. They 
 
 ENGAGE content and campaign controls are not available through this connection yet. I cannot manage tips, widgets, or engagement content from here.
 
-Point them to their CSM and to the ARENA360 ENGAGE screens in the platform.
+Point them to support@lsports.eu and to the ARENA360 ENGAGE screens in the platform.
 
 Access stays read-only for this module until tools exist.
 

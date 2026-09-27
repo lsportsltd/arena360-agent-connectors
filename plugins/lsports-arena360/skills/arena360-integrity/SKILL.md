@@ -15,7 +15,7 @@ Integrity work is out of casual trading scope. The inventory that ships with `ar
 
 1. Stop analysis. Do not score, explain, or downplay the signal.
 2. Surface what the operator already stated, in their words.
-3. Route them to the operator integrity team and to their CSM.
+3. Route them to the operator integrity team and to support@lsports.eu.
 4. If they asked for a TRADE, BOOST, or Coverage Hub read that is unrelated to the integrity claim, you may continue that read after the route.
 
 ## Never

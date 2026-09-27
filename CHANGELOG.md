@@ -11,6 +11,11 @@ Initial public packaging for the LSports ARENA360 plugin and the MCP Registry `s
 - Points every MCP client at `https://arena-mcp.lsports.eu/arena/mcp` only.
 - Documents the live tool inventory from 2026-09-27.
 - The tool inventory ships inside `arena360-use` at `references/tool-inventory.md`. The name list is the count.
+- Approval is only approve or deny. The operator does not name Production in that same turn.
+- `arena360-use` and `arena360-changes-apply` tell the agent to load them before tools or writes. BOOST still asks for books and scope inside the skill.
+- Package and premium refusals use support@lsports.eu.
+- Validation installs with `npm ci` and runs gitleaks.
+- Codex example prompts include a UAT change that waits for approval.
 - DEFEND and ENGAGE skills state that the hosted MCP exposes no tools for those modules.
 - Codex listing sets the privacy and terms URLs. Support and security contact is support@lsports.eu.
 - GitHub repository: https://github.com/lsportsltd/arena360-agent-connectors.

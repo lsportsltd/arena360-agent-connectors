@@ -58,7 +58,7 @@ Read and write, for modules that have tools. Every change is shown and approved 
 
 - Show which sports I am ordering InPlay and how many fixtures sit under each.
 - Compare BOOST fixture coverage for my named providers last 7 days.
-- Who am I signed in as on this ARENA360 account?
+- On UAT, suspend the main market for this fixture. Show the change and wait for my approval before you apply it.
 
 ## Voice
 

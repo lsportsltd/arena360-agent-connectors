@@ -70,7 +70,7 @@ Competition-level ordered fixtures: call `ordering_get_fixtures_orders` with ord
 ## Writes
 
 1. Read the matching row.
-2. If `canBeOrdered` is false or missing after a successful lookup, refuse and send the operator to csm@lsports.eu.
+2. If `canBeOrdered` is false or missing after a successful lookup, refuse and send the operator to support@lsports.eu.
 3. Hierarchy payload must include every parent id from that row: sport, location, tournament, fixture as applicable.
 4. If the server says the hierarchy is incomplete, fill missing parent ids from the row and retry once. Do not retry the same payload.
 5. If the server says a premium subscription is required, stop. Do not retry.

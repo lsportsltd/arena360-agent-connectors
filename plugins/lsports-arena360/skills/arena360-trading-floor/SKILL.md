@@ -39,7 +39,7 @@ Load `arena360-changes-apply` first. These change what bettors are offered immed
 
 Every trading-floor tool needs InPlay or PreMatch. Ask if missing. Never guess. Never sweep both.
 
-If the betting type is not in the package, stop and send the operator to csm@lsports.eu.
+If the betting type is not in the package, stop and send the operator to support@lsports.eu.
 
 ## Resolve ids in order
 

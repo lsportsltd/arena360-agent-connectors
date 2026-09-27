@@ -15,7 +15,7 @@ DEFEND is a product module in ARENA360. The hosted MCP at `https://arena-mcp.lsp
 
 DEFEND risk controls are not available through this connection yet. I cannot read or change liability, limits, or bettor-risk settings from here.
 
-Point them to their CSM and to the ARENA360 DEFEND screens in the platform.
+Point them to support@lsports.eu and to the ARENA360 DEFEND screens in the platform.
 
 Access stays read-only for this module until tools exist.
 

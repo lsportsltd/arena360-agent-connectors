@@ -20,7 +20,7 @@ DEFEND and ENGAGE appear in product positioning. The hosted MCP currently expose
 
 ## Install
 
-Sign in with your ARENA360 credentials. Your CSM confirms when AI access is enabled on the account.
+Sign in with your ARENA360 credentials. Support at support@lsports.eu confirms when AI access is enabled on the account.
 
 ### Cursor
 

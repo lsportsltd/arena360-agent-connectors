@@ -1,6 +1,6 @@
 ---
 name: arena360-use
-description: Use when any ARENA360 MCP tool will be called, before the first tool. Trigger on operator questions about TRADE orders, configuration, trading floor, BOOST, Coverage Hub, session identity, writes, DEFEND, or ENGAGE.
+description: "MANDATORY prerequisite. You MUST load this skill before any ARENA360 MCP tool call, including TRADE orders, configuration, trading floor, BOOST, Coverage Hub, session identity, writes, DEFEND, and ENGAGE."
 license: Apache-2.0
 metadata:
   version: "0.1.0"
@@ -54,7 +54,7 @@ When a tool requires a package type and the operator named one, use that one onl
 
 Call arguments (keep these out of operator replies): InPlay is package type 1. PreMatch is package type 2. Coverage Hub market type 0 is PreMatch and 1 is InPlay. Ordering setting levels are 1 sport, 2 location, 3 competition, 4 fixture. Order status 1 means ordered.
 
-If a trading-floor call returns that the betting type is not in the package, stop. Tell the operator to contact CSM at csm@lsports.eu. Do not retry the other type.
+If a trading-floor call returns that the betting type is not in the package, stop. Tell the operator to contact support at support@lsports.eu. Do not retry the other type.
 
 ## Writes
 

@@ -26,7 +26,7 @@ That is the only session tool in the live inventory.
 
 ## Failures
 
-If identity cannot be read, the hosted connection is not authenticated. Tell the operator to sign in again at `https://arena-mcp.lsports.eu/arena/mcp` and to contact their CSM if it still fails. Do not suggest another host.
+If identity cannot be read, the hosted connection is not authenticated. Tell the operator to sign in again at `https://arena-mcp.lsports.eu/arena/mcp` and to contact support@lsports.eu if it still fails. Do not suggest another host.
 
 ## Never
 

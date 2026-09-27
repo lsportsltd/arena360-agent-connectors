@@ -1,6 +1,6 @@
 ---
 name: arena360-changes-apply
-description: Use when any ARENA360 write will run, including orders, market settings, templates, provider lists, odds ladders, alerts, distribution, package updates, or trading-floor suspend and unsuspend.
+description: "MANDATORY prerequisite. You MUST load this skill before any ARENA360 write, including orders, market settings, templates, provider lists, odds ladders, alerts, distribution, package updates, and trading-floor suspend or unsuspend."
 license: Apache-2.0
 metadata:
   version: "0.1.0"
@@ -106,7 +106,7 @@ Load the matching product skill and honor its preflight. If preflight fails, do 
 Ordering subscription writes:
 
 1. Read the matching `ordering_get_*_orders` row.
-2. If `canBeOrdered` is false or missing after a successful lookup, refuse. Refer the operator to CSM at csm@lsports.eu.
+2. If `canBeOrdered` is false or missing after a successful lookup, refuse. Refer the operator to support@lsports.eu.
 3. `isPremium` alone is not the decision.
 
 Hierarchy writes need every parent id: sport, then location, then tournament, then fixture. Copy ids from the order row. Never send sport plus fixture alone.
@@ -121,7 +121,9 @@ Deletes, order removals, and suspends are destructive. Say that in the show step
 
 ## Package and environment
 
-If the account has several packages, name the target (QA, UAT, or Production) in the show step. If the operator did not name one, ask. Prefer rehearsal on QA or UAT when the operator wants a production change.
+If the account has several packages, name the target (QA, UAT, or Production) in the show step, before the approval ask. If the operator did not name one, ask in that earlier turn and wait. Do not ask them to name Production, QA, or UAT in the same turn as approve or deny. After the target is known, the approval reply is only approve or deny.
+
+Prefer rehearsal on QA or UAT when the operator wants a production change. Say that preference in the show step, not in the approval ask.
 
 ## Never
 
