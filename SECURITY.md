@@ -1,6 +1,6 @@
 # Security
 
-Report vulnerabilities in this packaging repo or in the hosted ARENA360 MCP connection to `<SECURITY_CONTACT>`.
+Report vulnerabilities in this packaging repo through private GitHub vulnerability reporting on `lsportsltd/arena360-agent-connectors`.
 
 Do not file public GitHub issues for security findings.
 

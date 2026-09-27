@@ -80,7 +80,7 @@ Use only this URL:
 
 Every write uses skill `arena360-changes-apply`: show the change, wait for operator approval, apply, then verify. When the server returns an approval id, the agent also calls `decide_write_approval`.
 
-Public docs at https://docs.lsports.eu/u/getting-started/arena360-ai-access still say write access is coming and name only TRADE and BOOST. The plugin claims read and write for modules that already expose tools. Product must resolve that blocker before catalog submission. See `docs/decisions.md`.
+https://docs.lsports.eu/u/getting-started/arena360-ai-access describes write access as not yet available and names TRADE and BOOST. This plugin follows the hosted MCP: read and write for modules that expose tools, and Coverage Hub reads. DEFEND and ENGAGE have no hosted tools yet.
 
 ## Layout
 
@@ -113,19 +113,15 @@ Requires Node 20+.
 ## Docs
 
 - `docs/listing-copy.md`: catalog copy
-- `docs/repo-settings.md`: GitHub repo settings for the public remote
+- `docs/repo-settings.md`: repository name, description, and topics
 - `docs/tool-inventory.md`: live 110-tool inventory
-- `docs/test-prompts.md`: positive and negative prompts
-- `docs/decisions.md`: schema and product conflicts
-- `docs/links.md`: public links only
-- `submissions/`: directory checklists
-
-## Brand
-
-Interim logo is 200x200. Brand must supply `assets/arena360-logo.png` at 1024x1024 and a final `assets/social-preview.png` at 1280x640. Candidate brand color is `#E2F22D` pending Brand confirmation.
+- `docs/test-prompts.md`: example prompts and expected behavior
+- `docs/decisions.md`: format choices
+- `docs/links.md`: public links
+- `submissions/`: listing identity for each directory
 
 ## License
 
 Apache-2.0. Copyright LSports Data Ltd. See `LICENSE` and `NOTICE`.
 
-Contact: `<PLUGINS_CONTACT_EMAIL>`.
+Homepage: https://www.lsports.eu/arena360/

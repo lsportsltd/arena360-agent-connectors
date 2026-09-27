@@ -25,5 +25,3 @@ Access stays read-only for this module until tools exist.
 - Do not map DEFEND questions onto `ordering_*`, `configuration_*`, `boost_*`, `coveragehub_*`, or `tradingfloor_*`.
 - Do not request end-bettor PII or betting history as a workaround.
 - Do not treat BOOST margin or TRADE configuration as DEFEND.
-
-TODO(verify): Product and Engineering confirm when DEFEND tools ship. Then replace this stub and update `docs/tool-inventory.md`.

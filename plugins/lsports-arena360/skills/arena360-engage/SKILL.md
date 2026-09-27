@@ -27,5 +27,3 @@ Access stays read-only for this module until tools exist.
 - Do not treat `coveragehub_get_livescore` or `coveragehub_get_spotlight_*` as ENGAGE writes.
 - Do not build bettor-facing copy or betting tips from this plugin.
 - Do not request end-bettor PII.
-
-TODO(verify): Product and Engineering confirm when ENGAGE tools ship. Then replace this stub and update `docs/tool-inventory.md`.

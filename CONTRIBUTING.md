@@ -7,7 +7,7 @@ This repo packages the LSports ARENA360 plugin. It does not host server code.
 1. Read `docs/decisions.md` and `docs/tool-inventory.md`.
 2. Use only tool names from the live inventory. Never invent names.
 3. Keep the shared description string identical in every plugin `description` field.
-4. Keep version `0.1.0` in lockstep until Engineering bumps every manifest together.
+4. Keep every manifest on the same version. The current version is `0.1.0`.
 5. Point MCP config at `https://arena-mcp.lsports.eu/arena/mcp` only.
 
 ## Shared description
@@ -30,10 +30,10 @@ npm run validate
 ## Skills
 
 - Gate skills `arena360-use` and `arena360-changes-apply` stay complete.
-- DEFEND and ENGAGE stay stubs until the hosted MCP exposes tools.
+- DEFEND and ENGAGE skills state that the hosted MCP exposes no tools for those modules. Do not invent tool names.
 - Product skills may cite only inventory tool names.
 - Frontmatter needs `name` and `description`. Directory name must match `name`.
-- Operator-facing prose: active voice, short sentences. No em dashes. No banned marketing words listed in `docs/listing-copy.md`.
+- Operator-facing prose: active voice, short sentences. No em dashes. `scripts/validate.mjs` rejects marketing superlatives.
 
 ## Manifests
 
@@ -41,6 +41,4 @@ Copy field names from the Cursor schemas in `scripts/schemas/`. Cursor marketpla
 
 ## Pull requests
 
-Use a conventional commit subject. Mention inventory or schema conflicts in `docs/decisions.md`, not only in the PR body.
-
-Contact: `<PLUGINS_CONTACT_EMAIL>`.
+Use a conventional commit subject. Mention inventory or schema conflicts in `docs/decisions.md`.

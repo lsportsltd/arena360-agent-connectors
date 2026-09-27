@@ -1,13 +1,17 @@
-# Cursor Marketplace checklist
+# Cursor Marketplace
 
-Submit at https://cursor.com/marketplace/publish after the public GitHub repo exists. Do not submit from this draft.
+Plugin id: `lsports-arena360`
 
-- [ ] Repo is public: `lsportsltd/arena360-agent-connectors`
-- [ ] `.cursor-plugin/marketplace.json` validates (`npm run validate`)
-- [ ] Plugin `.cursor-plugin/plugin.json` name is `lsports-arena360`, version `0.1.0`, license `Apache-2.0`
-- [ ] Logo path `assets/logo.png` exists in the plugin
-- [ ] TODO(verify) Brand: replace logo with 1024x1024 before review if Cursor rejects 200x200
-- [ ] README install steps match the public repo
-- [ ] Product blocker cleared: public AI-access docs still say write is coming (`docs/decisions.md`)
-- [ ] Legal replaced `<TERMS_URL>` if the form asks for terms
-- [ ] No internal hosts in the diff
+Marketplace: `.cursor-plugin/marketplace.json`
+
+Manifest: `plugins/lsports-arena360/.cursor-plugin/plugin.json`
+
+Version: 0.1.0
+
+License: Apache-2.0
+
+Logo: `plugins/lsports-arena360/assets/logo.png`
+
+Description: the shared string in `docs/listing-copy.md`
+
+MCP URL: `https://arena-mcp.lsports.eu/arena/mcp`

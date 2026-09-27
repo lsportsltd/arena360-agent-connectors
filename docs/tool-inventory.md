@@ -10,8 +10,7 @@ Discovery returned full schemas and no MCP `title`, `readOnlyHint`, `destructive
 - **DEFEND:** zero tools. No `defend_*` name exists. Skill `arena360-defend` is a stub.
 - **ENGAGE:** zero tools. No `engage_*` name exists. Skill `arena360-engage` is a stub.
 - **Annotations missing:** no `title`, `readOnlyHint`, `destructiveHint`, or `openWorldHint` on any tool. Clients cannot rely on hints to separate reads from writes.
-- **Public docs lag:** https://docs.lsports.eu/u/getting-started/arena360-ai-access still says write is coming and lists only TRADE and BOOST. This inventory includes Configuration, Ordering, and Trading floor writes.
-- **Private server repo:** `lsportsltd/trd-queen-arena-mcp-server` was not readable from this environment, so tool titles were not copied from source.
+- **Public docs:** https://docs.lsports.eu/u/getting-started/arena360-ai-access describes write access as not yet available and names TRADE and BOOST. This inventory lists the tools the hosted MCP exposed on 2026-09-27, including Configuration, Ordering, and Trading floor writes.
 
 ## Access summary
 

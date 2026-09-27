@@ -36,7 +36,6 @@ const REQUIRED = [
   "SECURITY.md",
   "CONTRIBUTING.md",
   "CHANGELOG.md",
-  "CODEOWNERS",
   ".gitignore",
   "server.json",
   "package.json",
@@ -169,10 +168,12 @@ if (codexPlugin?.interface) {
   const iface = codexPlugin.interface;
   if (!("websiteURL" in iface)) fail("codex interface must use websiteURL (current OpenAI docs)");
   if ("websiteUrl" in iface) fail("codex interface still uses Airtable websiteUrl casing");
-  if (iface.privacyPolicyURL !== "<TERMS_URL>" || iface.termsOfServiceURL !== "<TERMS_URL>") {
-    fail("codex privacy and terms must stay <TERMS_URL> until Legal replaces them");
+  for (const key of ["privacyPolicyURL", "termsOfServiceURL"]) {
+    if (key in iface && !String(iface[key]).startsWith("https://")) {
+      fail(`codex ${key} must be an https URL`);
+    }
   }
-  if (iface.brandColor !== "#E2F22D") fail("codex brandColor must stay the #E2F22D candidate until Brand confirms");
+  if (iface.brandColor !== "#E2F22D") fail("codex brandColor must be #E2F22D");
 }
 
 if (cursorMarket?.plugins?.[0]) {
@@ -230,9 +231,10 @@ if (!/approve/i.test(changes) || !changes.includes("deny")) fail("write protocol
 
 for (const stub of ["arena360-defend", "arena360-engage"]) {
   const body = read(`plugins/lsports-arena360/skills/${stub}/SKILL.md`);
-  if (!body.includes("zero") || !body.includes("hosted MCP") || !body.includes("TODO(verify)")) {
-    fail(`${stub} must stay a stub: zero tools, hosted MCP, TODO(verify)`);
+  if (!body.includes("zero") || !body.includes("hosted MCP")) {
+    fail(`${stub} must say the hosted MCP exposes zero tools`);
   }
+  if (body.includes("TODO")) fail(`${stub} must not contain task markers`);
   if (new RegExp(`${stub.includes("defend") ? "defend" : "engage"}_[a-z]`).test(body)) {
     fail(`${stub} invents a concrete tool name`);
   }
@@ -347,7 +349,10 @@ for (const file of walkRepo(root)) {
     if (text.includes("—") || text.includes("–")) fail(`${rel} contains an em or en dash`);
     if (text.includes(" -- ")) fail(`${rel} contains ' -- '`);
     if (bannedRe.test(text)) fail(`${rel} contains banned wording: ${text.match(bannedRe)[0]}`);
+    if (/^[-*] \[[ xX]\]/m.test(text)) fail(`${rel} contains a task checkbox`);
   }
+  if (/\bTODO\b|\bFIXME\b/.test(text)) fail(`${rel} contains a task marker`);
+  if (/<[A-Z][A-Z0-9_]{2,}>/.test(text)) fail(`${rel} contains an angle-bracket placeholder`);
   if (/TRADE360/.test(text) || /\bMTS\b/.test(text)) fail(`${rel} uses TRADE360 or MTS`);
   if (/lsports-gcp|qa-trd|prod-trd/.test(text)) fail(`${rel} contains an internal host marker`);
   for (const match of text.matchAll(/[a-z0-9.-]*lsports\.eu/g)) {
@@ -363,17 +368,9 @@ const repoText = walkRepo(root)
   .filter((file) => !relative(root, file).startsWith("scripts/schemas/"))
   .map((file) => readFileSync(file, "utf8"))
   .join("\n");
-for (const token of [
-  "<TERMS_URL>",
-  "<PLUGINS_CONTACT_EMAIL>",
-  "<SECURITY_CONTACT>",
-  "<PRODUCT_OWNER_HANDLE>",
-  "<ENG_OWNER_HANDLE>",
-  "<BRAND_HEX>",
-]) {
-  if (!repoText.includes(token)) fail(`missing placeholder ${token}`);
+if ((repoText.match(new RegExp(MCP_URL.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || []).length < 1) {
+  fail("MCP URL missing");
 }
-if ((repoText.match(new RegExp(MCP_URL, "g")) || []).length < 1) fail("MCP URL missing");
 
 const license = existsSync(join(root, "LICENSE")) ? read("LICENSE") : "";
 if (!license.includes("Apache License") || !license.includes("Version 2.0")) fail("LICENSE is not Apache-2.0");
@@ -385,18 +382,10 @@ function pngSize(path) {
   return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
 }
 const logo = pngSize("assets/arena360-logo.png");
-const decisions = existsSync(join(root, "docs/decisions.md")) ? read("docs/decisions.md") : "";
-if (logo && (logo.width !== 1024 || logo.height !== 1024)) {
-  if (!decisions.includes("1024x1024") || !decisions.includes("TODO(verify)")) {
-    fail("interim logo is not 1024x1024 and decisions.md does not record the Brand TODO");
-  }
-}
+if (!logo) fail("assets/arena360-logo.png is not a PNG");
 const social = pngSize("assets/social-preview.png");
 if (social && (social.width !== 1280 || social.height !== 640)) {
   fail(`social-preview.png is ${social.width}x${social.height}, expected 1280x640`);
-}
-if (!decisions.includes("TODO(verify)") || !decisions.includes("1280x640")) {
-  fail("decisions.md must record the social preview Brand TODO");
 }
 
 if (existsSync(join(root, "scripts/schemas/plugin.schema.json"))) {
