@@ -48,7 +48,7 @@ const REQUIRED = [
   "docs/repo-settings.md",
   "docs/listing-copy.md",
   "docs/test-prompts.md",
-  "docs/tool-inventory.md",
+  "plugins/lsports-arena360/skills/arena360-use/references/tool-inventory.md",
   "docs/decisions.md",
   "docs/links.md",
   "scripts/validate.mjs",
@@ -219,11 +219,21 @@ if (server) {
   if (server.packages) fail("server.json must not publish a package");
 }
 
-const inventoryText = existsSync(join(root, "docs/tool-inventory.md")) ? read("docs/tool-inventory.md") : "";
+const inventoryPath = "plugins/lsports-arena360/skills/arena360-use/references/tool-inventory.md";
+const inventoryText = existsSync(join(root, inventoryPath)) ? read(inventoryPath) : "";
 const inventoryBlock = inventoryText.match(/```text\n([\s\S]*?)\n```/);
-const inventory = inventoryBlock ? inventoryBlock[1].split("\n").filter(Boolean) : [];
-if (inventory.length !== 110) fail(`tool inventory count is ${inventory.length}, expected 110`);
+const inventory = inventoryBlock ? inventoryBlock[1].split("\n").map((line) => line.trim()).filter(Boolean) : [];
+if (!inventory.length) fail("tool inventory full list is empty");
 if (new Set(inventory).size !== inventory.length) fail("tool inventory has duplicate names");
+const useSkill = existsSync(join(root, "plugins/lsports-arena360/skills/arena360-use/SKILL.md"))
+  ? read("plugins/lsports-arena360/skills/arena360-use/SKILL.md")
+  : "";
+if (!useSkill.includes("references/tool-inventory.md")) {
+  fail("arena360-use must point at references/tool-inventory.md");
+}
+if (useSkill.includes("docs/tool-inventory.md")) {
+  fail("arena360-use still points outside the plugin at docs/tool-inventory.md");
+}
 
 const writes = inventory.filter((name) => name.includes("_post_") || name === "decide_write_approval");
 const changes = existsSync(join(root, "plugins/lsports-arena360/skills/arena360-changes-apply/SKILL.md"))

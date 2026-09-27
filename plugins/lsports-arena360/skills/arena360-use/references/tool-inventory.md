@@ -1,7 +1,8 @@
 # ARENA360 tool inventory
 
 Source: live hosted MCP discovery on 2026-09-27 at `https://arena-mcp.lsports.eu/arena/mcp`.
-Count: **110**. Do not add names that are not in this file.
+
+The full list at the end of this file is the inventory. Do not add a name that is not in that list. Do not keep a separate tool count. The list is the count.
 
 Discovery returned full schemas and no MCP `title`, `readOnlyHint`, `destructiveHint`, or `openWorldHint`. Access and destructive labels below are inferred from the tool name and confirmed write prefixes. They are not server annotations.
 
@@ -23,7 +24,6 @@ Discovery returned full schemas and no MCP `title`, `readOnlyHint`, `destructive
 | Coverage Hub | 12 | 12 | 0 |
 | Ordering (TRADE) | 18 | 12 | 6 |
 | Trading floor | 14 | 12 | 2 |
-| **Total** | **110** | **87** | **23** |
 
 Write prefixes: `configuration_post_*`, `ordering_post_*`, `tradingfloor_post_fixture_market_suspend`, `tradingfloor_post_fixture_market_remove_suspension`, and `decide_write_approval`.
 

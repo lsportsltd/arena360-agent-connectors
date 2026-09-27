@@ -38,7 +38,7 @@ Ordering answers come from `ordering_*` only. Trading floor answers come from `t
 
 ## Tool names
 
-Use only names in `docs/tool-inventory.md` (110 live tools). Never invent a name.
+Use only names in `references/tool-inventory.md`. That file ships with this skill. Never invent a name.
 
 DEFEND and ENGAGE expose zero tools on the hosted MCP. Say so. Do not guess `defend_*` or `engage_*`.
 

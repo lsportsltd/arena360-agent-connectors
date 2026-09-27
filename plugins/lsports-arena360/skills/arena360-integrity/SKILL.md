@@ -9,7 +9,7 @@ metadata:
 
 # ARENA360 integrity
 
-Integrity work is out of casual trading scope. There is no integrity tool in the live 110-tool inventory.
+Integrity work is out of casual trading scope. The inventory that ships with `arena360-use` has no integrity tool.
 
 ## Required behavior
 

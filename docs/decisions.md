@@ -36,7 +36,7 @@ Manifests are per client (`.cursor-plugin`, `.claude-plugin`, `.codex-plugin`), 
 
 ## DEFEND and ENGAGE
 
-Live discovery on 2026-09-27 returned 110 tools and no DEFEND or ENGAGE tools. Listing copy still names both modules. Skills `arena360-defend` and `arena360-engage` say the hosted MCP does not expose tools for them, and they do not invent tool names.
+Live discovery on 2026-09-27 returned no DEFEND or ENGAGE tools. Listing copy still names both modules. Skills `arena360-defend` and `arena360-engage` say the hosted MCP does not expose tools for them, and they do not invent tool names. The name list ships at `plugins/lsports-arena360/skills/arena360-use/references/tool-inventory.md`.
 
 ## Public docs
 

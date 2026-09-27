@@ -16,7 +16,7 @@ Audience: B2B sportsbook operators. This is the control layer for a whole ARENA3
 | Skills | 12 operator workflows, including write approval |
 | Access | Read and write for modules that expose tools |
 
-DEFEND and ENGAGE appear in product positioning. The hosted MCP currently exposes **zero** tools for those modules. Their skills are stubs. See `docs/tool-inventory.md`.
+DEFEND and ENGAGE appear in product positioning. The hosted MCP currently exposes **zero** tools for those modules. Their skills are stubs. The tool list ships with the plugin at `plugins/lsports-arena360/skills/arena360-use/references/tool-inventory.md`.
 
 ## Install
 
@@ -113,7 +113,7 @@ Requires Node 20+.
 
 - `docs/listing-copy.md`: catalog copy
 - `docs/repo-settings.md`: repository name, description, and topics
-- `docs/tool-inventory.md`: live 110-tool inventory
+- `plugins/lsports-arena360/skills/arena360-use/references/tool-inventory.md`: tool names that ship with the plugin
 - `docs/test-prompts.md`: example prompts and expected behavior
 - `docs/decisions.md`: format choices
 - `docs/links.md`: public links

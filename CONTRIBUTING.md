@@ -4,7 +4,7 @@ This repo packages the LSports ARENA360 plugin. It does not host server code.
 
 ## Before you edit
 
-1. Read `docs/decisions.md` and `docs/tool-inventory.md`.
+1. Read `docs/decisions.md` and `plugins/lsports-arena360/skills/arena360-use/references/tool-inventory.md`.
 2. Use only tool names from the live inventory. Never invent names.
 3. Keep the shared description string identical in every plugin `description` field.
 4. Keep every manifest on the same version. The current version is `0.1.0`.
