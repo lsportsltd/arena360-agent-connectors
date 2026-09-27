@@ -24,12 +24,11 @@ Sign in with your ARENA360 credentials. Your CSM confirms when AI access is enab
 
 ### Cursor
 
-Browse the Cursor Marketplace once the listing is live, or add this repo as a marketplace after it is on GitHub:
+Browse the Cursor Marketplace once the listing is live, or add this repository from the Cursor plugin panel:
 
-```bash
-# After Daniel publishes lsportsltd/arena360-agent-connectors
-# add the marketplace from the Cursor plugin panel, then install lsports-arena360
-```
+https://github.com/lsportsltd/arena360-agent-connectors
+
+Then install `lsports-arena360`.
 
 For a local clone:
 

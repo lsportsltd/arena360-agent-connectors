@@ -4,6 +4,7 @@
 | --- | --- |
 | Owner | `lsportsltd` |
 | Name | `arena360-agent-connectors` |
+| URL | https://github.com/lsportsltd/arena360-agent-connectors |
 | Visibility | Public |
 | Default branch | `main` |
 | Homepage | https://www.lsports.eu/arena360/ |

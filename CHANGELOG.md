@@ -12,3 +12,4 @@ Initial public packaging for the LSports ARENA360 plugin and the MCP Registry `s
 - Documents the live 110-tool inventory from 2026-09-27.
 - DEFEND and ENGAGE skills state that the hosted MCP exposes no tools for those modules.
 - Codex listing sets the privacy and terms URLs. Support and security contact is supports@lsports.eu.
+- GitHub repository: https://github.com/lsportsltd/arena360-agent-connectors.

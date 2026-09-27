@@ -16,9 +16,7 @@ Only these URLs belong in this repo. Do not add staging hosts, internal UI paths
 | OpenAI plugins | https://developers.openai.com/plugins/build/plugins |
 | Agent Skills spec | https://agentskills.io/specification |
 | MCP Registry schema | https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json |
-| Intended GitHub repo | https://github.com/lsportsltd/arena360-agent-connectors |
-
-The GitHub URL is the repo Daniel will create. It does not exist yet.
+| GitHub | https://github.com/lsportsltd/arena360-agent-connectors |
 
 Support and security: supports@lsports.eu
 
